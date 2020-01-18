@@ -90,17 +90,6 @@
     #
     - name: Unity
       rating: 1
-    #
-    - name: Vim
-      rating: 2
-    #
-    - name: Visual Studio
-      rating: 5
-      refs:
-        - zmr
-    #
-    - name: VS Code
-      rating: 3
 
 
 #
