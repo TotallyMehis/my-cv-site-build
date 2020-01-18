@@ -27,6 +27,7 @@
       refs:
         - interview
         - influx
+        - this-site
     #
     - name: Java
       rating: 1
@@ -36,6 +37,7 @@
       refs:
         - interview
         - influx
+        - this-site
     #
     - name: Lua
       rating: 2
@@ -111,6 +113,7 @@
     - name: NodeJS
       rating: 3
       refs:
+        - this-site
         - interview
     #
     - name: OpenGL
