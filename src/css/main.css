@@ -216,6 +216,7 @@ footer {
 hr.proj-sep {
 	margin-top: 0;
 	margin-bottom: 0;
+	box-sizing: border-box; /* Fixes hr's going over the container. */
 }
 
 .project h4 {
