@@ -74,3 +74,14 @@
   links:
     - name: Github
       url: https://github.com/TotallyMehis/sfuws
+#
+#
+#
+- name: This Site
+  id: this-site
+  desc: A static website used for displaying all this! 😄
+  tech: NodeJS, Eleventy, PugJS, YAML
+  text: A static site built with Eleventy. PugJS for templates and YAML for data. Hosted on Github Pages.
+  links:
+    - name: Github
+      url: https://github.com/TotallyMehis/my-cv-site-build
