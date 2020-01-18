@@ -88,7 +88,7 @@ footer {
 
 .nav-bar li a {
 	display: block;
-	padding: 0 20px;
+	padding: 0 0.6em;
 	
 	font-size: 16pt;
 }
@@ -373,6 +373,10 @@ td.skill-name .ref::after {
 	.nav-bar ul {
 		margin: 0 auto;
 		width: 100%;
+	}
+
+	.nav-bar li a {
+		padding: 0 0.5em;
 	}
 }
 
