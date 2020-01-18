@@ -1,0 +1,301 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	
+	background-color: #f2f2f2;
+	color: #333;
+	
+	background-repeat: repeat;
+	/*background-size: cover;*/
+	background-position: top center;
+	background-image: url('../img/bg001.png');
+}
+
+a {
+	transition: 0.2s;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -55px;
+    visibility: hidden;
+}
+
+h2 {
+	margin-bottom: 1em;
+}
+
+footer {
+	margin-top: 120px;
+	padding-bottom: 10px;
+	
+	font-size: 8pt;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+}
+
+.nav-bar.sticky {
+	background-color: white;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	z-index: 100;
+}
+
+.nav-bar {
+	height: 55px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.nav-bar p {
+	display: table-cell;
+	vertical-align: middle;
+	color: #aaaaaa;
+}
+
+.nav-bar ul {
+	display: table;
+	list-style: none;
+	margin: 0;
+	margin-left: 10px;
+	padding: 0;
+	vertical-align: middle;
+	height: 100%;
+}
+
+#link-top, .link-top-sep {
+	visibility: hidden;
+}
+
+.sticky #link-top, .sticky .link-top-sep {
+	visibility: visible;
+}
+
+
+.nav-bar li {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.nav-bar li a {
+	display: block;
+	padding: 0 20px;
+	
+	font-size: 16pt;
+}
+
+.site-head {
+	height: 300px;
+	
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: top center;
+	background-image: url('../img/bg002.png');
+	
+	overflow: hidden;
+}
+
+.nav-bar a {
+	text-transform: uppercase;
+}
+
+.site-head p {
+	vertical-align: middle;
+	pointer-events: none;
+}
+
+.head-center {
+	width: 400px;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	padding-top: 10px;
+}
+
+.my-face {
+	display: block;
+	width: auto;
+	max-width: 100%;
+	height: 150px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 50%;
+	border-style: double;
+	border-color: white;
+}
+
+.title-text {
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.social-links-container {
+	display: table;
+	margin: 0 auto;
+}
+
+.social-link {
+	display: table-cell;
+	padding: 10px 20px;
+}
+
+.social-link * {
+	display: inline-block;
+}
+
+.social-link p {
+	vertical-align: middle;
+	margin: 0;
+}
+
+.section-break {
+	height: 3em;
+}
+
+.section {
+	transition: 0.2s;
+	
+	padding: 2em 0 2em 0;
+	
+	background-color: #ffffff;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.desc {
+	font-size: 14pt;
+	margin-bottom: 0.5em;
+}
+
+hr.proj-sep {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.project h4 {
+	margin-bottom: 1em;
+	display: inline-block;
+}
+
+.project .links {
+	display: inline-block;
+	word-spacing: 4pt;
+	
+	margin-left: 1.5em;
+	margin-bottom: 0em;
+}
+
+/* Testing fade in bg img */
+.project .bg {
+	position: absolute;
+	top: 0;
+	width: 400px;
+	height: 100%;
+	z-index: -1;
+
+	right: 0;
+	background: linear-gradient(to left,rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%), url('../img/bg001.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.tech-used {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-weight: 900;
+}
+
+td.skill-name {
+	padding-right: 10px;
+}
+
+td.skill-name .ref {
+	font-size: 8pt;
+	vertical-align: top;
+	text-align: left;
+	padding: 0 0.2em;
+}
+
+td.skill-name .ref[href='#project-zmr']::before {
+	content: '[1';
+}
+
+td.skill-name .ref[href='#project-influx']::before {
+	content: '[2';
+}
+
+td.skill-name .ref[href='#project-ezauto']::before {
+	content: '[3';
+}
+
+td.skill-name .ref[href='#project-sfuws']::before {
+	content: '[4';
+}
+
+td.skill-name .ref[href='#project-ssdb']::before {
+	content: '[5';
+}
+
+td.skill-name .ref[href='#project-interview']::before {
+	content: '[6';
+}
+
+td.skill-name .ref::after {
+	content: ']';
+}
+
+.tab-small {
+	margin-left: 10px;
+}
+
+.stuff-content {
+	padding: 2.5em 0;
+}
+
+.stuff-content.project {
+	transition: 0.5s;
+	position: relative;
+	z-index: 0;
+}
+
+.section.skills table {
+	margin: 0 auto;
+	white-space: nowrap;
+}
+
+.section.skills .col-sm {
+	margin: 10px 0 10px 0;
+}
+
+.my-text-light {
+	color: #777777;
+}
+
+@media (max-width: 850px) {
+	.head-center {
+		padding-top: 45px;
+	}
+	
+	.site-head {
+		height: 340px;
+	}
+
+	.project .bg {
+		display: none;
+	}
+}
+
+@media (max-width: 450px) {
+	.nav-bar ul {
+		margin: 0 auto;
+	}
+}
+
+

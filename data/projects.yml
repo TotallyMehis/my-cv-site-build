@@ -1,0 +1,76 @@
+#
+# Projects
+#
+
+# id:
+#   The id for that specific section. Referenced in the html code. (project-id/section-project-id)
+
+#
+#
+#
+- name: 'Zombie Master: Reborn'
+  id: zmr
+  desc: A game modification based on the Source game engine combining FPS and RTS genres.
+  tech: C++, Linux, Game, Design
+  text: Creating new code maintaining Source's large codebase and debugging crashes on Linux & Windows (Visual Studio/VS Code).
+  links:
+    - name: ModDB
+      url: https://www.moddb.com/mods/zombie-master-reborn
+    - name: Github
+      url: https://github.com/zm-reborn/zmr-game
+#
+#
+#
+- name: Video Interview Web Application
+  id: interview
+  desc: Real-time video interviewing site made for H&auml;me University of Applied Sciences to be used in foreign student selection process.
+  tech: NodeJS, ExpressJS, TypeScript, MySQL
+  text: Streaming video through WebSocket to a NodeJS server with a ExpressJS for web. Fully written in TypeScript. Building is done with gulpJS.
+#
+#
+#
+- name: Influx Timer
+  id: influx
+  desc: A modular game server plugin for tracking times w/ web app
+  tech: PHP, HTML/CSS, Ajax, Python, MySQL/SQLite, SourcePawn
+  text: |
+    Working with MySQL/SQLite for record keeping, PHP & Ajax for viewing records through the web.<br>
+    Website is built with Bootstrap and builds are automatically deployed to it.
+  links:
+    - name: Website
+      url: https://influxtimer.com/
+    - name: Github
+      url: https://github.com/InfluxTimer
+#
+#
+#
+- name: EzAuto
+  id: ezauto
+  desc: Memory reading hack for GoldSrc & Source engine games. C++ exercise
+  tech: C++, Reverse Engineering
+  text: Reads game memory and reacts accordingly, sending inputs to OS.
+  links:
+    - name: Github
+      url: https://github.com/TotallyMehis/EzAuto
+#
+#
+#
+- name: Source Serverlist Discord Bot
+  id: ssdb
+  desc: A bot that acts as a Source server browser for Discord servers.
+  tech: Python, Async, Linux
+  text: Queries Valve master servers &amp; game servers, and updates the server list whenever needed.
+  links:
+    - name: Github
+      url: https://github.com/TotallyMehis/source-serverlist-discordbot
+#
+#
+#
+- name: SFUWS
+  id: sfuws
+  desc: .NET class library for easy file uploading through HTTP. C# exercise
+  tech: C#, .NET, HTTP
+  text: HTTP POST-request parsing.
+  links:
+    - name: Github
+      url: https://github.com/TotallyMehis/sfuws

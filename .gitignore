@@ -1,0 +1,10 @@
+# Basic node ignore list
+node_modules
+npm-debug.log
+.env
+.DS_Store
+
+# Eleventy
+_site
+
+

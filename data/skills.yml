@@ -1,0 +1,123 @@
+#
+# Skills
+#
+
+
+#
+# Languages
+#
+- name: Languages
+  skills:
+    #
+    - name: C/C++
+      rating: 5
+      refs:
+        - zmr
+        - ezauto
+    #
+    - name: C#
+      rating: 3
+      refs:
+        - sfuws    #
+    - name: GLSL
+      rating: 0
+    #
+    - name: HTML/CSS
+      rating: 4
+      refs:
+        - interview
+        - influx
+    #
+    - name: Java
+      rating: 1
+    #
+    - name: Javacript (jQuery, TypeScript)
+      rating: 4
+      refs:
+        - interview
+        - influx
+    #
+    - name: Lua
+      rating: 2
+    #
+    - name: PHP
+      rating: 4
+      refs:
+        - influx
+    #
+    - name: Python (3)
+      rating: 4
+      refs:
+        - ssdb
+    #
+    - name: SQL (MySQL, SQLite)
+      rating: 4
+      refs:
+        - influx
+        - interview
+
+#
+# Tools
+#
+- name: Tools
+  skills:
+    #
+    - name: Bash/Shell
+      rating: 3
+    #
+    - name: Batch Script
+      rating: 3
+    #
+    - name: Git (CLI)
+      rating: 4
+    #
+    - name: Make
+      rating: 1
+    #
+    - name: Unity
+      rating: 1
+    #
+    - name: Vim
+      rating: 2
+    #
+    - name: Visual Studio
+      rating: 5
+      refs:
+        - zmr
+    #
+    - name: VS Code
+      rating: 3
+
+
+#
+# Tech
+#
+- name: Frameworks/Libraries/Technologies
+  skills:
+    #
+    - name: .NET
+      rating: 1
+      refs:
+        - sfuws
+    #
+    - name: Django
+      rating: 1
+    #
+    - name: ExpressJS
+      rating: 3
+      refs:
+        - interview
+    #
+    - name: NodeJS
+      rating: 3
+      refs:
+        - interview
+    #
+    - name: OpenGL
+      rating: 0
+    #
+    - name: Steamworks
+      rating: 3
+      refs:
+        - zmr
+

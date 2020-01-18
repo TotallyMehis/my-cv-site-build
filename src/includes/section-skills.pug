@@ -1,0 +1,35 @@
+a#skills.anchor
+.section.skills
+  .container
+    h2.text-center Skills, ie. buzzword bonanza
+    p.my-text-light
+      | These are 
+      b relative
+      |  and tell 
+      b how comfortable
+      |  I am with each subject. 
+      b More is better.
+
+    - const MAX_RATING = 5;
+    .row
+      each skilllist in skills
+        .col-sm
+          h4.text-center= skilllist.name
+          table
+            tbody
+              each skill in skilllist.skills
+                tr
+                  td.skill-name= skill.name
+                    - if (skill.refs)
+                      each ref in skill.refs
+                        a.ref(href='#project-'+ref)
+                  //- Skill rating
+                  td
+                    - for (let i = 0; i < skill.rating; i++)
+                      | &block;
+                    - const out_of = MAX_RATING - skill.rating;
+                    - for (let i = 0; i < out_of; i++)
+                      | &blk14;
+              //- End of skill loop
+
+      //- End of skill list loop

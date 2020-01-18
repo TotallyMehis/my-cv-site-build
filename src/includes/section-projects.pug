@@ -1,0 +1,32 @@
+a#projects.anchor
+.section.stuff
+  h2.text-center Projects / Stuff I&apos;ve done
+  
+  - let projsep = false
+  each project in projects
+    //- Add project separator
+    - if (projsep)
+      hr.container.proj-sep
+    
+    a.anchor(id='project-'+project.id)
+    div.stuff-content.project(id='section-project-'+project.id)
+      .container
+        h4= project.name
+        
+        //- Add possible links
+        - if (project.links)
+          - let linksep = false
+          p.links
+            each link in project.links
+              - if (linksep)
+                |  /  
+              a(href=link.url target='_blank')= link.name
+              - linksep = true
+        
+        .tab-small
+          p.desc!= project.desc
+          p.tech-used= project.tech
+          p.string!= project.text
+    - projsep = true
+    //- End project loop
+    
