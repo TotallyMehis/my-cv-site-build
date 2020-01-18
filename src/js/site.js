@@ -31,18 +31,24 @@ $(document).ready(function() {
 	//  When clicked on a project reference, highlight said project.
 	//
 
-	const registerHighlight = (hrefTarget, sectionName, btnClassName = 'td.skill-name .ref') => {
-		$(btnClassName).each(function() {
+	// Find all the possible projects and register the highlight.
+	$('[id^=project-]').each(function() {
+		const myId = $(this).attr('id');
+		const id = myId.replace(/project-/, '');
+
+
+		const hrefTarget = '#'+myId;
+		const sectionName = '#section-project-'+id;
+
+		console.log("Href Target: "+hrefTarget+" | Project section: "+sectionName);
+
+		// For all the reference links:
+		$('td.skill-name .ref').each(function() {
 			if ($(this).attr('href') !== hrefTarget) {
 				return;
 			}
 	
-			//$(this).mouseenter(function() {
-			//	$(sectionName).css('background-color', highlightColor);
-			//});
-			//$(this).mouseleave(function() {
-			//	$(sectionName).css('background-color', '#ffffff');
-			//});
+
 			$(this).click(function() {
 				$(sectionName).css('background-color', highlightColor);
 				setTimeout(function() {
@@ -50,14 +56,7 @@ $(document).ready(function() {
 				}, 1000);
 			});
 		});
-	}
-
-	registerHighlight('#project-zmr', '#section-project-zmr');
-	registerHighlight('#project-interview', '#section-project-interview');
-	registerHighlight('#project-influx', '#section-project-influx');
-	registerHighlight('#project-ezauto', '#section-project-ezauto');
-	registerHighlight('#project-ssdb', '#section-project-ssdb');
-	registerHighlight('#project-sfuws', '#section-project-sfuws');
+	});
 	
 
 	//
