@@ -223,6 +223,9 @@ td.skill-name .ref {
 	padding: 0 0.2em;
 }
 
+/*
+	TODO: Replace this stuff
+*/
 td.skill-name .ref[href='#project-zmr']::before {
 	content: '[1';
 }
@@ -245,6 +248,10 @@ td.skill-name .ref[href='#project-ssdb']::before {
 
 td.skill-name .ref[href='#project-interview']::before {
 	content: '[6';
+}
+
+td.skill-name .ref[href='#project-this-site']::before {
+	content: '[7';
 }
 
 td.skill-name .ref::after {
