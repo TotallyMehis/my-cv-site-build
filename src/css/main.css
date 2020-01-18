@@ -68,6 +68,7 @@ footer {
 	padding: 0;
 	vertical-align: middle;
 	height: 100%;
+	float: left;
 }
 
 #link-top, .link-top-sep {
@@ -82,6 +83,7 @@ footer {
 .nav-bar li {
 	display: table-cell;
 	vertical-align: middle;
+	text-align: center;
 }
 
 .nav-bar li a {
@@ -89,6 +91,43 @@ footer {
 	padding: 0 20px;
 	
 	font-size: 16pt;
+}
+
+.nav-bar button.green {
+	--rgb: 0, 255, 0;
+}
+
+.nav-bar button.blue {
+	--rgb: 0, 0, 255;
+}
+
+.nav-bar button {
+	float: right;
+	height: 100%;
+
+	border: none;
+	outline: none;
+
+	transition: 0.1s;
+	background-color: transparent;
+
+	padding: 0 1em 0 1em;
+
+	color: #333;
+	font-size: 14pt;
+}
+
+.nav-bar button:hover {
+	background-color: rgba(var(--rgb),0.2);
+}
+
+
+.nav-bar button.pressed {
+	background-color: rgba(var(--rgb),0.3);
+}
+
+#highlight-toggle-web {
+	margin-right: 2em;
 }
 
 .site-head {
@@ -223,6 +262,26 @@ td.skill-name .ref {
 	padding: 0 0.2em;
 }
 
+.highlight-web {
+	transition: 1s;
+	background-color: transparent;
+	--rgb: 0, 255, 0;
+}
+
+.highlight-systems {
+	transition: 1s;
+	background-color: transparent;
+	--rgb: 0, 0, 255;
+}
+
+.highlight-web.highlight-systems {
+	--rgb: 0, 255, 255;
+}
+
+.highlight-now {
+	background-color: rgba(var(--rgb),0.2);
+}
+
 /*
 	TODO: Replace this stuff
 */
@@ -285,7 +344,7 @@ td.skill-name .ref::after {
 	color: #777777;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 880px) {
 	.head-center {
 		padding-top: 45px;
 	}
@@ -297,11 +356,22 @@ td.skill-name .ref::after {
 	.project .bg {
 		display: none;
 	}
+
+	#highlight-toggle-web {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 700px) {
+	.nav-bar button {
+		display: none;
+	}
 }
 
 @media (max-width: 450px) {
 	.nav-bar ul {
 		margin: 0 auto;
+		width: 100%;
 	}
 }
 

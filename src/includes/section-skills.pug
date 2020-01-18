@@ -18,7 +18,15 @@ a#skills.anchor
           table
             tbody
               each skill in skilllist.skills
-                tr
+                -
+                  let rowclass = '';
+                  if (skill.markWeb)
+                    rowclass += 'highlight-web';
+                  if (skill.markSystems)
+                    rowclass +=
+                      (rowclass !== '' ? ' ' : '') + // Insert space if there already is a class.
+                      'highlight-systems';
+                tr(class= rowclass)
                   td.skill-name= skill.name
                     - if (skill.refs)
                       each ref in skill.refs

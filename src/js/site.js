@@ -1,5 +1,9 @@
 'use strict';
 
+function toggleStuff() {
+
+}
+
 $(document).ready(function() {
 	const highlightColor = '#dddddd';
 
@@ -57,7 +61,42 @@ $(document).ready(function() {
 			});
 		});
 	});
-	
+
+
+	//
+	// 
+	//
+	$('#highlight-toggle-web').click(function() {
+		$('.highlight-web').each(function() {
+			if ($(this).hasClass('highlight-now')) {
+				$(this).removeClass('highlight-now');
+			} else {
+				$(this).addClass('highlight-now');
+			}
+		});
+
+		if ($(this).hasClass('pressed')) {
+			$(this).removeClass('pressed');
+		} else {
+			$(this).addClass('pressed');
+		}
+	});
+
+	$('#highlight-toggle-systems').click(function() {
+		$('.highlight-systems').each(function() {
+			if ($(this).hasClass('highlight-now')) {
+				$(this).removeClass('highlight-now');
+			} else {
+				$(this).addClass('highlight-now');
+			}
+		});
+
+		if ($(this).hasClass('pressed')) {
+			$(this).removeClass('pressed');
+		} else {
+			$(this).addClass('pressed');
+		}
+	});
 
 	//
 	// Nav bar that follows you
