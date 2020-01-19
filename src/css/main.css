@@ -213,6 +213,14 @@ footer {
 	margin-bottom: 0.5em;
 }
 
+.education table {
+	font-size: 10pt;
+}
+
+.education td {
+	padding: 0 2em 0 2em;
+}
+
 hr.proj-sep {
 	margin-top: 0;
 	margin-bottom: 0;
