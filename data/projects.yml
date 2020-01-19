@@ -11,7 +11,7 @@
 - name: 'Zombie Master: Reborn'
   id: zmr
   desc: A game modification based on the Source game engine combining FPS and RTS genres.
-  tech: C++, Linux, Game, Design
+  tech: C++, Linux, Game Design
   text: Creating new code maintaining Source's large codebase and debugging crashes on Linux & Windows (Visual Studio/VS Code).
   markSystems: true
   links:
@@ -59,6 +59,18 @@
 #
 #
 #
+- name: This Site!
+  id: this-site
+  desc: A static website used for displaying all this. 😄
+  tech: NodeJS, Eleventy, PugJS, YAML
+  text: A static Bootstrap site built with Eleventy. PugJS for templates and YAML for data. Hosted on Github Pages.
+  markWeb: true
+  links:
+    - name: Github
+      url: https://github.com/TotallyMehis/my-cv-site-build
+#
+#
+#
 - name: Source Serverlist Discord Bot
   id: ssdb
   desc: A bot that acts as a Source server browser for Discord servers.
@@ -80,15 +92,3 @@
   links:
     - name: Github
       url: https://github.com/TotallyMehis/sfuws
-#
-#
-#
-- name: This Site
-  id: this-site
-  desc: A static website used for displaying all this! 😄
-  tech: NodeJS, Eleventy, PugJS, YAML
-  text: A static site built with Eleventy. PugJS for templates and YAML for data. Hosted on Github Pages.
-  markWeb: true
-  links:
-    - name: Github
-      url: https://github.com/TotallyMehis/my-cv-site-build

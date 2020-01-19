@@ -104,6 +104,13 @@
       refs:
         - sfuws
     #
+    - name: Bootstrap
+      rating: 4
+      markWeb: true
+      refs:
+        - this-site
+        - influx
+    #
     - name: Django
       markWeb: true
       rating: 1
