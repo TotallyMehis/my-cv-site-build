@@ -5,9 +5,6 @@ function toggleStuff() {
 }
 
 $(document).ready(function() {
-	const highlightColor = '#dddddd';
-
-
 	//
 	// Some old WIP stuff.
 	//
@@ -52,11 +49,13 @@ $(document).ready(function() {
 				return;
 			}
 	
-
+			// When clicked, highlight the project section.
 			$(this).click(function() {
-				$(sectionName).css('background-color', highlightColor);
+				const section = $(sectionName);
+
+				section.addClass('highlight-ref');
 				setTimeout(function() {
-					$(sectionName).css('background-color', '#ffffff');
+					section.removeClass('highlight-ref');
 				}, 1000);
 			});
 		});

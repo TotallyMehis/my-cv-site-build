@@ -283,6 +283,10 @@ td.skill-name .ref {
 	background-color: rgba(var(--rgb),0.2);
 }
 
+.highlight-ref {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
 /*
 	TODO: Replace this stuff
 */
