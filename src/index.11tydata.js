@@ -1,21 +1,35 @@
 const yaml = require('js-yaml');
 const fs = require('fs');
+const md = require("markdown-it")({
+    html: false,
+    breaks: true,
+    linkify: true
+});
 
 
-function readYaml(path) {
-    let doc = null;
-    
+function readFromFile(path) {
+    let data = null;
+
     try {
-        doc = yaml.safeLoad(fs.readFileSync(path, 'utf8'));
+        data = fs.readFileSync(path, 'utf8');
     } catch (e) {
         console.log(e);
     }
 
-    return doc;
+    return data;
+}
+
+function readYaml(path) {
+    return yaml.safeLoad(readFromFile(path));
+}
+
+function readMarkdown(path) {
+    return md.render(readFromFile(path));
 }
 
 
 module.exports = {
     projects: readYaml('data/projects.yml'),
-    skills: readYaml('data/skills.yml')
+    skills: readYaml('data/skills.yml'),
+    aboutMe: readMarkdown('data/about_me.md')
 };
