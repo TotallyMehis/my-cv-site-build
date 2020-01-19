@@ -1,40 +1,40 @@
 a#projects.anchor
 .section.stuff
-  h2.text-center Projects / Stuff I've done
-  
-  - let projsep = false
-  each project in projects
-    //- Add project separator
-    - if (projsep)
-      hr.container.proj-sep
+    h2.text-center Projects / Stuff I've done
     
-    a.anchor(id='project-'+project.id)
-
-    -
-      let projclass = 'stuff-content project';
-      if (project.markWeb)
-        projclass += ' highlight-web';
-      if (project.markSystems)
-        projclass += ' highlight-systems';
-
-    div(id='section-project-'+project.id, class=projclass)
-      .container
-        h4= project.name
+    - let projsep = false
+    each project in projects
+        //- Add project separator
+        - if (projsep)
+            hr.container.proj-sep
         
-        //- Add possible links
-        - if (project.links)
-          - let linksep = false
-          p.links
-            each link in project.links
-              - if (linksep)
-                |  /  
-              a(href=link.url target='_blank')= link.name
-              - linksep = true
+        a.anchor(id='project-'+project.id)
+
+        -
+            let projclass = 'stuff-content project';
+            if (project.markWeb)
+                projclass += ' highlight-web';
+            if (project.markSystems)
+                projclass += ' highlight-systems';
+
+        div(id='section-project-'+project.id, class=projclass)
+            .container
+                h4= project.name
+                
+                //- Add possible links
+                - if (project.links)
+                    - let linksep = false
+                    p.links
+                        each link in project.links
+                            - if (linksep)
+                                |    /    
+                            a(href=link.url target='_blank')= link.name
+                            - linksep = true
+                
+                .tab-small
+                    p.desc!= project.desc
+                    p.tech-used= project.tech
+                    p.string!= project.text
+        - projsep = true
+        //- End project loop
         
-        .tab-small
-          p.desc!= project.desc
-          p.tech-used= project.tech
-          p.string!= project.text
-    - projsep = true
-    //- End project loop
-    
