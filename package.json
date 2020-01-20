@@ -4,9 +4,11 @@
   "description": "For building my site.",
   "main": "main.js",
   "scripts": {
-    "start": "eleventy && npm run minify && npm run movefiles",
+    "start": "eleventy && npm run minify && npm run movefiles_final",
+    "dev": "eleventy && npm run movefiles",
     "minify": "node-minify -c gcc -i src/js/site.js -o _site/js/site.js && node-minify -c clean-css -i src/css/main.css -o _site/css/main.css",
-    "movefiles": "npx cpy src/img/* _site/img/ && npx cpy src/CNAME _site/"
+    "movefiles": "npx cpy src/css/*.css _site/css/ && npx cpy src/js/*.js _site/js/ && npx cpy src/img/* _site/img/",
+    "movefiles_final": "npx cpy src/img/* _site/img/ && npx cpy src/CNAME _site/"
   },
   "keywords": [],
   "author": "",

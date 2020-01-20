@@ -7,4 +7,5 @@ Tested on NodeJS LTS.
 2. Run `npm start` to do full build. Output in `_site`-directory.
 
 ## Development
+Run `npm run dev` when modifying files.
 To skip unnecessary steps run `npx eleventy` when changing `.pug` or `.yml` files.
