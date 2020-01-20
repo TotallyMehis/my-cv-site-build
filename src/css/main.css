@@ -1,3 +1,8 @@
+:root {
+	--navbar-height: 3.3rem;
+	--anchor-height: -3.3rem;
+}
+
 html {
 	font-size: 0.9em;
 
@@ -24,7 +29,7 @@ a {
 a.anchor {
     display: block;
     position: relative;
-    top: -55px;
+    top: var(--anchor-height);
     visibility: hidden;
 }
 
@@ -51,7 +56,7 @@ footer {
 }
 
 .nav-bar {
-	height: 55px;
+	height: var(--navbar-height);
 	width: 100%;
 	overflow: hidden;
 }
@@ -66,7 +71,7 @@ footer {
 	display: table;
 	list-style: none;
 	margin: 0;
-	margin-left: 10px;
+	margin-left: 2rem;
 	padding: 0;
 	vertical-align: middle;
 	height: 100%;
@@ -263,7 +268,7 @@ hr.proj-sep {
 }
 
 td.skill-name {
-	padding-right: 10px;
+	padding-right: 0.5rem;
 }
 
 td.skill-name .ref {
@@ -332,10 +337,6 @@ td.skill-name .ref::after {
 	content: ']';
 }
 
-.tab-small {
-	margin-left: 10px;
-}
-
 .stuff-content {
 	padding: 2.5rem 0;
 }
@@ -352,7 +353,7 @@ td.skill-name .ref::after {
 }
 
 .section.skills .col-sm {
-	margin: 10px 0 10px 0;
+	margin: 0.5rem 0 0.5rem 0;
 }
 
 .my-text-light {

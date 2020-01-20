@@ -31,10 +31,9 @@ a#projects.anchor
                             a(href=link.url target='_blank')= link.name
                             - linksep = true
                 
-                .tab-small
-                    p.desc!= project.desc
-                    p.tech-used= project.tech
-                    p.string!= project.text
+                p.desc!= project.desc
+                p.tech-used= project.tech
+                p.string!= project.text
         - projsep = true
         //- End project loop
         
