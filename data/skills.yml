@@ -20,9 +20,7 @@
       rating: 3
       markSystems: true
       refs:
-        - sfuws    #
-    - name: GLSL
-      rating: 0
+        - sfuws
     #
     - name: HTML/CSS
       rating: 4
@@ -36,7 +34,7 @@
       rating: 1
       markSystems: true
     #
-    - name: Javacript (jQuery, TypeScript)
+    - name: Javacript
       rating: 4
       markWeb: true
       refs:
@@ -59,7 +57,7 @@
       refs:
         - ssdb
     #
-    - name: SQL (MySQL, SQLite)
+    - name: SQL
       rating: 4
       markWeb: true
       markSystems: true
@@ -121,6 +119,14 @@
       refs:
         - interview
     #
+    - name: MySQL
+      rating: 4
+      markWeb: true
+      markSystems: true
+      refs:
+        - interview
+        - influx
+    #
     - name: NodeJS
       rating: 3
       markWeb: true
@@ -128,11 +134,21 @@
         - this-site
         - interview
     #
-    - name: OpenGL
-      rating: 0
-    #
     - name: Steamworks
       rating: 3
       refs:
         - zmr
+    #
+    - name: TypeScript
+      rating: 4
+      markWeb: true
+      refs:
+        - interview
+    #
+    - name: SQLite
+      rating: 4
+      markWeb: true
+      markSystems: true
+      refs:
+        - influx
 
