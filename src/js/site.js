@@ -44,7 +44,7 @@ $(document).ready(function() {
 		console.log("Href Target: "+hrefTarget+" | Project section: "+sectionName);
 
 		// For all the reference links:
-		$('td.skill-name .ref').each(function() {
+		$('.skill-ref').each(function() {
 			if ($(this).attr('href') !== hrefTarget) {
 				return;
 			}
