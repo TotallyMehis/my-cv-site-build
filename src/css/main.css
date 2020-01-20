@@ -1,4 +1,6 @@
 html {
+	font-size: 0.9em;
+
 	scroll-behavior: smooth;
 }
 
@@ -27,7 +29,7 @@ a.anchor {
 }
 
 h2 {
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 }
 
 footer {
@@ -88,7 +90,7 @@ footer {
 
 .nav-bar li a {
 	display: block;
-	padding: 0 0.6em;
+	padding: 0 0.6rem;
 	
 	font-size: 16pt;
 }
@@ -111,7 +113,7 @@ footer {
 	transition: 0.1s;
 	background-color: transparent;
 
-	padding: 0 1em 0 1em;
+	padding: 0 1rem 0 1rem;
 
 	color: #333;
 	font-size: 14pt;
@@ -127,7 +129,7 @@ footer {
 }
 
 #highlight-toggle-web {
-	margin-right: 2em;
+	margin-right: 2rem;
 }
 
 .site-head {
@@ -171,7 +173,7 @@ footer {
 }
 
 .title-text {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: 300;
 }
 
@@ -195,13 +197,13 @@ footer {
 }
 
 .section-break {
-	height: 3em;
+	height: 3rem;
 }
 
 .section {
 	transition: 0.2s;
 	
-	padding: 2em 0 2em 0;
+	padding: 2rem 0 2rem 0;
 	
 	background-color: #ffffff;
 	border-top: 1px solid rgba(0,0,0,0.1);
@@ -210,7 +212,7 @@ footer {
 
 .desc {
 	font-size: 14pt;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.5rem;
 }
 
 .education table {
@@ -218,7 +220,7 @@ footer {
 }
 
 .education td {
-	padding: 0 2em 0 2em;
+	padding: 0 2rem 0 2rem;
 }
 
 hr.proj-sep {
@@ -228,7 +230,7 @@ hr.proj-sep {
 }
 
 .project h4 {
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 	display: inline-block;
 }
 
@@ -236,8 +238,8 @@ hr.proj-sep {
 	display: inline-block;
 	word-spacing: 4pt;
 	
-	margin-left: 1.5em;
-	margin-bottom: 0em;
+	margin-left: 1.5rem;
+	margin-bottom: 0rem;
 }
 
 /* Testing fade in bg img */
@@ -255,8 +257,8 @@ hr.proj-sep {
 }
 
 .tech-used {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 	font-weight: 900;
 }
 
@@ -268,7 +270,7 @@ td.skill-name .ref {
 	font-size: 8pt;
 	vertical-align: top;
 	text-align: left;
-	padding: 0 0.2em;
+	padding: 0 0.2rem;
 }
 
 .highlight-web {
@@ -335,7 +337,7 @@ td.skill-name .ref::after {
 }
 
 .stuff-content {
-	padding: 2.5em 0;
+	padding: 2.5rem 0;
 }
 
 .stuff-content.project {
@@ -388,7 +390,7 @@ td.skill-name .ref::after {
 	}
 
 	.nav-bar li a {
-		padding: 0 0.5em;
+		padding: 0 0.5rem;
 	}
 }
 
