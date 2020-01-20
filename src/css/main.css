@@ -267,11 +267,23 @@ hr.proj-sep {
 	font-weight: 900;
 }
 
-td.skill-name {
+td.skill-text {
 	padding-right: 0.5rem;
 }
 
-td.skill-name .ref {
+td .skill-name {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+td .skill-specifics {
+	display: inline-block;
+	font-size: 0.8rem;
+	vertical-align: bottom;
+	margin-left: 0.1rem;
+}
+
+td .skill-ref {
 	font-size: 8pt;
 	vertical-align: top;
 	text-align: left;
@@ -305,35 +317,35 @@ td.skill-name .ref {
 /*
 	TODO: Replace this stuff
 */
-td.skill-name .ref[href='#project-zmr']::before {
+td .skill-ref[href='#project-zmr']::before {
 	content: '[1';
 }
 
-td.skill-name .ref[href='#project-influx']::before {
+td .skill-ref[href='#project-influx']::before {
 	content: '[2';
 }
 
-td.skill-name .ref[href='#project-ezauto']::before {
+td .skill-ref[href='#project-ezauto']::before {
 	content: '[3';
 }
 
-td.skill-name .ref[href='#project-sfuws']::before {
+td .skill-ref[href='#project-sfuws']::before {
 	content: '[4';
 }
 
-td.skill-name .ref[href='#project-ssdb']::before {
+td .skill-ref[href='#project-ssdb']::before {
 	content: '[5';
 }
 
-td.skill-name .ref[href='#project-interview']::before {
+td .skill-ref[href='#project-interview']::before {
 	content: '[6';
 }
 
-td.skill-name .ref[href='#project-this-site']::before {
+td .skill-ref[href='#project-this-site']::before {
 	content: '[7';
 }
 
-td.skill-name .ref::after {
+td .skill-ref::after {
 	content: ']';
 }
 
