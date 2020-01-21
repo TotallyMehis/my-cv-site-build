@@ -323,6 +323,7 @@ td .skill-ref {
 	height: 100%;
 	margin-left: -50%;
 	width: 500%;
+	z-index: -1;
 }
 
 /*
