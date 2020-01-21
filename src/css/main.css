@@ -1,6 +1,11 @@
+
+/* TODO: Use sass or some shit */
 :root {
 	--navbar-height: 3.3rem;
 	--anchor-height: -3.3rem;
+	--project-padding: 2.5rem;
+
+	--project-anchor-padding: -5.7rem;
 }
 
 html {
@@ -361,14 +366,15 @@ td .skill-ref::after {
 	content: ']';
 }
 
-.stuff-content {
-	padding: 2.5rem 0;
-}
-
-.stuff-content.project {
+.section.stuff .project {
+	padding: var(--project-padding) 0;
 	transition: 0.5s;
 	position: relative;
 	z-index: 0;
+}
+
+.project .anchor {
+	top: var(--project-anchor-padding);
 }
 
 .section.skills table {

@@ -9,9 +9,8 @@ a#projects.anchor
             - if (projsep)
                 hr.container.proj-sep
             
-            a.anchor(id='project-'+project.id)
-
-            div.stuff-content.project
+            div.project
+                a.anchor(id='project-'+project.id)
                 -
                     let projclass = '';
                     if (project.markWeb)
