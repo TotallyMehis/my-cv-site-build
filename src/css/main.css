@@ -360,7 +360,7 @@ td .skill-ref::after {
 	content: ']';
 }
 
-.section.stuff .project {
+.section.projects .project {
 	padding: var(--project-padding) 0;
 	transition: 0.5s;
 	position: relative;
@@ -369,7 +369,7 @@ td .skill-ref::after {
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-.section.stuff .project:last-child {
+.section.projects .project:last-child {
 	border-bottom: none;
 }
 
