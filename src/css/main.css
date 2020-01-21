@@ -367,10 +367,13 @@ td .skill-ref::after {
 	z-index: 0;
 
 	border-bottom: 1px solid rgba(0,0,0,0.1);
+
+	margin-bottom: -1px; /* Account for the border. */
 }
 
 .section.projects .project:last-child {
 	border-bottom: none;
+	margin-bottom: 0;
 }
 
 .project .anchor {
