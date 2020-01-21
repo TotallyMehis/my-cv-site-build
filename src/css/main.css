@@ -248,6 +248,7 @@ hr.proj-sep {
 }
 
 /* Testing fade in bg img */
+/*
 .project .bg {
 	position: absolute;
 	top: 0;
@@ -260,6 +261,7 @@ hr.proj-sep {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+*/
 
 .tech-used {
 	margin-top: 0.5rem;
@@ -381,9 +383,11 @@ td .skill-ref::after {
 		height: 340px;
 	}
 
+	/*
 	.project .bg {
 		display: none;
 	}
+	*/
 
 	#highlight-toggle-web {
 		margin-right: 0;
