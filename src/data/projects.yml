@@ -12,7 +12,8 @@
   id: zmr
   desc: A game modification based on the Source game engine combining FPS and RTS genres.
   tech: C++, Linux, Game Design
-  text: Creating new code maintaining Source's large codebase and debugging crashes on Linux & Windows (Visual Studio/VS Code).
+  text: |
+    Project manager. Creating new code, maintaining Source's large codebase and debugging crashes on Linux & Windows.
   markSystems: true
   links:
     - name: ModDB
@@ -24,9 +25,11 @@
 #
 - name: Video Interview Web Application
   id: interview
-  desc: Real-time video interviewing site made for H&auml;me University of Applied Sciences to be used in foreign student selection process.
+  desc: Real-time video interviewing site made for Häme University of Applied Sciences to be used in foreign student selection process.
   tech: NodeJS, ExpressJS, TypeScript, MySQL
-  text: Streaming video through WebSocket to a NodeJS server with a ExpressJS for web. Fully written in TypeScript. Building is done with gulpJS.
+  text: |
+    Streaming video through WebSocket to a NodeJS server with ExpressJS for the web server.
+    Fully written in TypeScript. Building is done with gulpJS.
   markWeb: true
 #
 #

@@ -5,6 +5,8 @@ const md = require("markdown-it")({
     breaks: true,
     linkify: true
 });
+const path = require('path');
+
 
 
 function readFromFile(path) {
@@ -29,7 +31,7 @@ function readMarkdown(path) {
 
 
 module.exports = {
-    projects: readYaml('data/projects.yml'),
-    skills: readYaml('data/skills.yml'),
-    aboutMe: readMarkdown('data/about_me.md')
+    projects: readYaml(path.resolve(__dirname, 'projects.yml')),
+    skills: readYaml(path.resolve(__dirname, 'skills.yml')),
+    aboutMe: readMarkdown(path.resolve(__dirname, 'about_me.md'))
 };
