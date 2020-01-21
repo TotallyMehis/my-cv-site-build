@@ -34,7 +34,7 @@
       rating: 1
       markSystems: true
     #
-    - name: Javacript
+    - name: JavaScript
       rating: 4
       markWeb: true
       refs:
