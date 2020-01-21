@@ -20,6 +20,8 @@ body {
 	/*background-size: cover;*/
 	background-position: top center;
 	background-image: url('../img/bg001.png');
+
+	overflow-x: hidden;
 }
 
 a {
@@ -314,6 +316,14 @@ td .skill-ref {
 
 .highlight-ref {
 	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.project-highlight {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	margin-left: -50%;
+	width: 500%;
 }
 
 /*

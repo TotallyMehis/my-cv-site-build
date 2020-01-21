@@ -1,24 +1,24 @@
 a#projects.anchor
 .section.stuff
-    h2.text-center Projects / Stuff I've done
-    
-    - let projsep = false
-    each project in cvData.projects
-        //- Add project separator
-        - if (projsep)
-            hr.container.proj-sep
+    .container
+        h2.text-center Projects / Stuff I've done
         
-        a.anchor(id='project-'+project.id)
+        - let projsep = false
+        each project in cvData.projects
+            //- Add project separator
+            - if (projsep)
+                hr.container.proj-sep
+            
+            a.anchor(id='project-'+project.id)
 
-        -
-            let projclass = 'stuff-content project';
-            if (project.markWeb)
-                projclass += ' highlight-web';
-            if (project.markSystems)
-                projclass += ' highlight-systems';
-
-        div(id='section-project-'+project.id, class=projclass)
-            .container
+            div.stuff-content.project
+                -
+                    let projclass = '';
+                    if (project.markWeb)
+                        projclass += ' highlight-web';
+                    if (project.markSystems)
+                        projclass += ' highlight-systems';
+                div.project-highlight(id='section-project-'+project.id, class=projclass)
                 h4= project.name
                 
                 //- Add possible links
@@ -34,6 +34,6 @@ a#projects.anchor
                 p.desc!= project.desc
                 p.tech-used= project.tech
                 p.string!= project.text
-        - projsep = true
-        //- End project loop
-        
+            - projsep = true
+            //- End project loop
+            
