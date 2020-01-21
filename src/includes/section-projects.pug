@@ -3,12 +3,7 @@ a#projects.anchor
     .container
         h2.text-center Projects / Stuff I've done
         
-        - let projsep = false
         each project in cvData.projects
-            //- Add project separator
-            - if (projsep)
-                hr.container.proj-sep
-            
             div.project
                 a.anchor(id='project-'+project.id)
                 -
@@ -33,6 +28,5 @@ a#projects.anchor
                 p.desc!= project.desc
                 p.tech-used= project.tech
                 p.string!= project.text
-            - projsep = true
             //- End project loop
             

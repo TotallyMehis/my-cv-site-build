@@ -235,12 +235,6 @@ footer {
 	padding: 0 2rem 0 2rem;
 }
 
-hr.proj-sep {
-	margin-top: 0;
-	margin-bottom: 0;
-	box-sizing: border-box; /* Fixes hr's going over the container. */
-}
-
 .project h4 {
 	margin-bottom: 1rem;
 	display: inline-block;
@@ -371,6 +365,12 @@ td .skill-ref::after {
 	transition: 0.5s;
 	position: relative;
 	z-index: 0;
+
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.section.stuff .project:last-child {
+	border-bottom: none;
 }
 
 .project .anchor {
