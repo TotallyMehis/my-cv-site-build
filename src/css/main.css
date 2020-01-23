@@ -62,12 +62,20 @@ footer {
 	background-color: white;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 	z-index: 100;
+
+	pointer-events: auto; /* Re-enable pointer events. */
 }
 
 .nav-bar {
 	height: var(--navbar-height);
 	width: 100%;
 	overflow: hidden;
+
+	pointer-events: none; /* We're invisible, so disable pointer events for me. */
+}
+
+.nav-bar > * {
+	pointer-events: auto;
 }
 
 .nav-bar p {
@@ -174,16 +182,18 @@ footer {
 	padding-top: 10px;
 }
 
+.head-image {
+	text-align: center;
+}
+
 .my-face {
-	display: block;
 	width: auto;
 	max-width: 100%;
 	height: 150px;
-	margin: 0 auto;
-	margin-bottom: 10px;
+
 	border-radius: 50%;
 	border-style: double;
-	border-color: white;
+	/*border-color: white;*/
 }
 
 .title-text {
@@ -330,6 +340,8 @@ td .skill-ref {
 	margin-left: -50%;
 	width: 500%;
 	z-index: -1;
+
+	pointer-events: none;
 }
 
 /*
