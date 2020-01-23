@@ -6,5 +6,7 @@ npm-debug.log
 
 # Eleventy
 _site
+*.bat
+*.pdf
 
 
