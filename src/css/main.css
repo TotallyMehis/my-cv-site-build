@@ -6,6 +6,8 @@
 	--project-padding: 2.5rem;
 
 	--project-anchor-padding: -5.7rem;
+
+	--break-border-color: rgba(0,0,0,0.1);
 }
 
 html {
@@ -145,14 +147,14 @@ footer {
 }
 
 .site-head {
-	height: 300px;
-	
 	background-repeat: repeat;
 	background-size: cover;
 	background-position: top center;
 	background-image: url('../img/bg002.png');
 	
 	overflow: hidden;
+
+	padding-bottom: 1rem;
 }
 
 .nav-bar a {
@@ -194,9 +196,13 @@ footer {
 	margin: 0 auto;
 }
 
+.social-links-container a {
+	text-decoration: none;
+}
+
 .social-link {
 	display: table-cell;
-	padding: 10px 20px;
+	padding: 0.5rem 1rem;
 }
 
 .social-link * {
@@ -367,7 +373,7 @@ td .skill-ref::after {
 	position: relative;
 	z-index: 0;
 
-	border-bottom: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid var(--break-border-color);
 
 	margin-bottom: -1px; /* Account for the border. */
 }
@@ -397,10 +403,6 @@ td .skill-ref::after {
 @media (max-width: 880px) {
 	.head-center {
 		padding-top: 45px;
-	}
-	
-	.site-head {
-		height: 340px;
 	}
 
 	/*

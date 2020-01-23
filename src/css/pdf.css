@@ -1,0 +1,87 @@
+:root {
+    --project-padding: 1rem;
+
+    --break-border-color: rgba(0,0,0,0.2);
+}
+
+body {
+    background-image: none;
+}
+
+.head-text {
+    vertical-align: middle;
+    margin-left: 2rem;
+}
+
+.social-link {
+    padding: 0;
+    margin-right: 1rem;
+}
+
+.social-links-container {
+	display: table;
+	margin: 0;
+}
+
+.nav-bar,.section-break,footer {
+    display: none;
+}
+
+.project-list {
+    column-count: 2;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.project {
+    break-inside: avoid-column;
+    page-break-inside: avoid;
+}
+
+.section {
+    border: none;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+.site-head {
+    height: 120px;
+}
+
+.head-center {
+    height: 100%;
+    width: 800px;
+    text-align: center;
+}
+
+.head-center > * {
+    display: inline-block;
+}
+
+.my-face {
+    height: 100px;
+    display: inline-block;
+}
+
+h2.text-center {
+    text-align: left !important;
+}
+
+.desc {
+    font-size: 1.1rem;
+}
+
+.section {
+    padding: 1rem 0 1rem 0;
+}
+
+.head-center {
+    padding-top: 10px !important;
+}
