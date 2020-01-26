@@ -1,0 +1,29 @@
+head:
+  name: Tyyppi joka tekee asioita koodilla
+
+navbar:
+  me: Minä
+  skills: Taidot
+  projects: Projektit
+
+aboutMe:
+  name: Hieman minusta
+  educationText: Koulutus
+  education:
+    hamk:
+      name: "**HAMK**"
+      degree: |
+        Tieto- ja viestintätekniikka, insinööri
+    tavastia:
+      name: "**Ammattiopisto Tavastia**"
+      degree: |
+        Tieto- ja viestintätekniikan perustutkinto
+        Ylioppilas tutkinto
+
+skillLists:
+  name: "Taidot (muotisanat)"
+  desc: Määrä kertoo **kuinka tuttu aihe on**.
+
+projects:
+  name: Projektit / Juttuja
+

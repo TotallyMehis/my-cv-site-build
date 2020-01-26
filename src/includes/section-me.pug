@@ -1,25 +1,16 @@
 a#me.anchor
 #section-me.section.me
     .container
-        h2.text-center About Me
-        != cvData.aboutMe
+        h2.text-center= sections.aboutMe.name
+        p!= aboutMe
         .education.my-text-light
-            p.text-center Education
+            p.text-center= sections.aboutMe.educationText
             table.d-flex.justify-content-center
                 tbody
                     tr
-                        td
-                            strong Häme University of Applied Sciences
-                            br
-                            | Information And Communications Technology
-                            br
-                            strong 2019-
-                        td
-                            strong Tavastia Vocational College 
-                            | (upper secondary)
-                            br
-                            | Information And Communications Technology
-                            br
-                            | High school diploma
-                            br
-                            strong 2013-2016
+                        each edu in sections.aboutMe.education
+                            td
+                                != edu.name
+                                br
+                                != edu.degree
+                                strong!= edu.year

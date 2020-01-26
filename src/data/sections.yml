@@ -1,0 +1,32 @@
+head:
+  name: A guy who creates stuff with code
+
+navbar:
+  me: Me
+  skills: Skills
+  projects: Projects
+
+aboutMe:
+  name: About Me
+  educationText: Education
+  education:
+    hamk:
+      name: "**Häme University of Applied Sciences**"
+      degree: |
+        Information And Communications Technology, Engineer
+      year: 2019-
+    tavastia:
+      name: "**Tavastia Vocational College** (upper secondary)"
+      degree: |
+        Information And Communications Technology
+        High school diploma
+      year: 2013-2016
+
+skillLists:
+  name: Skills, ie. buzzword bonanza
+  desc: |
+    How familiar I am with each subject. **More is better.**
+
+projects:
+  name: Projects / Stuff I've done
+

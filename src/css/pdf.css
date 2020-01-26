@@ -33,6 +33,10 @@ p {
     margin-left: 2rem;
 }
 
+.title-text {
+	text-align: initial;
+}
+
 .social-link {
     padding: 0;
     margin-right: 1rem;

@@ -6,7 +6,8 @@
 #
 # Languages
 #
-- name: Languages
+languages:
+  name: Languages
   skills:
     #
     - name: C/C++
@@ -68,7 +69,8 @@
 #
 # Tools
 #
-- name: Tools
+tools:
+  name: Tools
   skills:
     #
     - name: Bash/Shell
@@ -93,7 +95,8 @@
 #
 # Tech
 #
-- name: Frameworks/Libraries/Technologies
+tech:
+  name: Frameworks/Libraries/Technologies
   skills:
     #
     - name: .NET

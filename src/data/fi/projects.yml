@@ -1,0 +1,65 @@
+#
+# Projects
+#
+
+# id:
+#   The id for that specific section. Referenced in the html code. (project-id/section-project-id)
+
+#
+#
+#
+zmr:
+  name: 'Zombie Master: Reborn - Peli'
+  desc: Source-pelimoottori modifikaatio, joka yhdistää FPS ja RTS elementtejä.
+  text: |
+    Projektipäällikkö. Uuden koodin luonti, Sourcen suuren lähdekoodin ylläpito
+    ja dumppien debuggaaminen Linuxilla ja Windowsilla.
+#
+#
+#
+interview:
+  name: Videohaastattelu Sovellus
+  desc: Sovellus HAMKin ulkomaalaisopiskelijoiden valintaprosessiin.
+  text: |
+    Video striimataan WebSocketin kautta. ExpressJS sivuston tarjontaan.
+    Kirjoitettu TypeScriptillä. Rakennetaan gulpJS:llä.
+#
+#
+#
+influx:
+  name: Influx Timer - Tilastojen hallinta-sovellus
+  desc: Modulaarinen peliserveri lisännäinen tilastojen seurantaan sivuston kautta.
+  text: |
+    MySQL ja SQLite tilastojen tallennukseen, PHP & Ajax tilastojen katsomiseen sivulta.
+    Uusimmat versiot tulevat automaattisesti kotisivuille.
+  links:
+    website:
+      name: Kotisivu
+#
+#
+#
+ezauto:
+  name: EzAuto - Huijausohjelma
+  desc: Muistinlukija huijausohjelma GoldSrc & Source pelimoottoreille. C++ harjoitus
+  text: Lukee pelin muistia ja reakoi halutulla tavalla.
+#
+#
+#
+this-site:
+  name: Tämä sivusto!
+  desc: Staattinen nettisivu tämän kaiken näyttämiseen. 😄
+  text: Staattinen Bootstrap sivu rakennettu Eleventy kirjastolla. Yhteensopiva printti median kanssa. Hostattu Github Pages-sivuilla.
+#
+#
+#
+ssdb:
+  name: SSDB - Discord botti
+  desc: Discord botti joka listaa Source peliservereitä.
+  text: Hakee masteri serveiltä tietoja ja päivittää listan tarvittaessa.
+#
+#
+#
+sfuws:
+  name: SFUWS - Tiedoston lähetys-sovellus
+  desc: .NET Class kirjasto joka tekee tiedostojen lähettämisen helpoksi. C# harjoitus
+  text: HTTP POST-haun jäsentely.

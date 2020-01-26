@@ -1,10 +1,10 @@
 a#projects.anchor
 .section.projects
     .container
-        h2.text-center Projects / Stuff I've done
+        h2.text-center= sections.projects.name
         
         .project-list
-            each project in cvData.projects
+            each project in projects
                 div.project
                     a.anchor(id='project-'+project.id)
                     -
