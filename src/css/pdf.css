@@ -59,7 +59,7 @@ p {
     page-break-inside: avoid;
 
     /* Kinda hacky */
-    height: 210px;
+    height: 200px;
 }
 
 .section.projects .project:nth-of-type(4) {
