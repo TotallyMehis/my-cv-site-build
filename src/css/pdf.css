@@ -8,6 +8,17 @@ body {
     background-image: none;
 }
 
+/*
+    Toggle print-only elements.
+*/
+.print {
+    display: initial !important;
+}
+
+.no-print {
+    display: none;
+}
+
 .head-text {
     vertical-align: middle;
     margin-left: 2rem;
