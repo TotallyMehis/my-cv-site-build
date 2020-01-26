@@ -229,6 +229,10 @@ footer {
 	margin: 0;
 }
 
+.social-link:not(:first-child) {
+	margin-left: 1rem;
+}
+
 .section-break {
 	height: 3rem;
 }
