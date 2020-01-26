@@ -295,23 +295,23 @@ footer {
 	font-weight: 900;
 }
 
-td.skill-text {
+.skill-text {
 	padding-right: 0.5rem;
 }
 
-td .skill-name {
+.skill-name {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-td .skill-specifics {
+.skill-specifics {
 	display: inline-block;
 	font-size: 0.8rem;
 	vertical-align: bottom;
 	margin-left: 0.1rem;
 }
 
-td .skill-ref {
+.skill-ref {
 	font-size: 8pt;
 	vertical-align: top;
 	text-align: left;

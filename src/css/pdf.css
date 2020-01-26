@@ -8,6 +8,15 @@ body {
     background-image: none;
 }
 
+p {
+    margin-bottom: 0.8rem;
+}
+
+.container > p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 /*
     Toggle print-only elements.
 */
@@ -48,6 +57,14 @@ body {
 .project {
     break-inside: avoid-column;
     page-break-inside: avoid;
+
+    /* Kinda hacky */
+    height: 210px;
+}
+
+.section.projects .project:nth-of-type(4) {
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
 .section {
@@ -95,4 +112,34 @@ h2.text-center {
 
 .head-center {
     padding-top: 10px !important;
+}
+
+.skill-ref {
+    display: none;
+}
+
+.print-skill-do-columns {
+    column-count: 2;
+    margin: 1rem 0 1rem 0;
+}
+
+.print-skill-do-columns table {
+    display: inline;
+}
+
+.print-skill-do-columns tbody {
+    display: inline;
+}
+
+.print-skill-do-columns tr {
+    display: block;
+    margin: 0 auto;
+}
+
+.print-skill-do-columns td {
+    display: inline-block;
+}
+
+.print-skill-do-columns tr td:last-of-type {
+    float: right;
 }
