@@ -45,11 +45,12 @@ function readMarkdown(file, quiet = false) {
 
 module.exports = {
     // Returns site data specific to a language (prefix)
-    readData: (function(prefix = '') {
+    readData: (function(lang = '') {
         const data = {};
         
 
         // TODO: Just adding / at the end of the string is not a good idea...
+        let prefix = lang;
         if (prefix !== '') {
             prefix = prefix + '/';
         }
@@ -105,6 +106,24 @@ module.exports = {
         }
         
         data.sections.skillLists.desc = toMd(data.sections.skillLists.desc);
+
+        data.translations = {
+            currentId: lang,
+            langs: [
+                {
+                    id: '',
+                    shortname: 'en',
+                    name: 'english',
+                    link: 'index.html'
+                },
+                {
+                    id: 'fi',
+                    shortname: 'fi',
+                    name: 'finnish',
+                    link: 'fi.html'
+                }
+            ]
+        };
 
         return data;
     })

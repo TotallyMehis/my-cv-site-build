@@ -143,7 +143,23 @@ footer {
 	padding: 0 1rem 0 1rem;
 
 	color: #333;
-	font-size: 14pt;
+	font-size: 1.3rem;
+}
+
+.langs {
+	display: table;
+	height: 100%;
+
+	margin: 0 2rem 0 2rem;
+}
+
+.langs-button {
+	display: table-cell;
+	vertical-align: middle;
+
+	text-transform: uppercase;
+
+	padding: 0 1rem 0 1rem;
 }
 
 .nav-bar button:hover {
@@ -423,7 +439,7 @@ td .skill-ref::after {
 	color: #777777;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 950px) {
 	.head-center {
 		padding-top: 45px;
 	}
@@ -446,6 +462,10 @@ td .skill-ref::after {
 }
 
 @media (max-width: 450px) {
+	.nav-bar .langs {
+		display: none;
+	}
+	
 	.nav-bar ul {
 		margin: 0 auto;
 		width: 100%;
