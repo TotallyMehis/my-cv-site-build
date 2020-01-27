@@ -259,6 +259,7 @@ footer {
 
 .education td {
 	padding: 0 2rem 0 2rem;
+	vertical-align: top;
 }
 
 .project h4 {
