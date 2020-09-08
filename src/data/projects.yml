@@ -101,6 +101,7 @@ sfuws:
   tech: C#, .NET, HTTP
   text: HTTP POST-request parsing.
   markSystems: true
+  printHide: true
   links:
     - name: Github
       url: https://github.com/TotallyMehis/sfuws

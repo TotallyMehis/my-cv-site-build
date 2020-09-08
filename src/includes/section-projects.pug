@@ -5,7 +5,11 @@ a#projects.anchor
         
         .project-list
             each project in projects
-                div.project
+                -
+                    let contclass = '';
+                    if (project.printHide)
+                        contclass += ' no-print';
+                div.project(class=contclass)
                     a.anchor(id='project-'+project.id)
                     -
                         let projclass = '';
