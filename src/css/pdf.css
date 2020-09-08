@@ -73,10 +73,11 @@ p {
     page-break-inside: avoid;
 
     /* Kinda hacky */
-    height: 200px;
+    height: 210px;
 }
 
-.section.projects .project:nth-of-type(4) {
+.section.projects .project:nth-of-type(3),
+.section.projects .project:nth-of-type(6) {
     border-bottom: none;
     margin-bottom: 0;
 }
@@ -131,7 +132,7 @@ h2.text-center {
 
 .skill-text {
     /* Hacky */
-    width: 70px;
+    width: 80px;
 }
 
 .skill-ref {
@@ -140,7 +141,7 @@ h2.text-center {
 
 .print-skill-do-columns {
     column-count: 2;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0 0 0;
 }
 
 .print-skill-do-columns table {
