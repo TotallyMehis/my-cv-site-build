@@ -4,6 +4,10 @@
     --break-border-color: rgba(0,0,0,0.2);
 }
 
+@page {
+    size: A4 portrait;
+}
+
 body {
     background-image: none;
 }
