@@ -28,14 +28,14 @@ p {
 }
 
 /*
-    Toggle print-only elements.
+    Toggle pdf/print-only elements.
 */
-.print {
+.in-print {
     display: initial !important;
 }
 
 .no-print {
-    display: none;
+    display: none !important;
 }
 
 .head-text {

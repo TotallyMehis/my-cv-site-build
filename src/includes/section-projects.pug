@@ -23,7 +23,10 @@ a#projects.anchor
                     //- Add possible links
                     - if (project.links)
                         - let linksep = false
-                        p.links
+                        //- p.links.in-print
+                        //-     each link in project.links
+                        //-         a(href=link.url target='_blank')= link.url
+                        p.links.no-print
                             each link in project.links
                                 - if (linksep)
                                     |    /    

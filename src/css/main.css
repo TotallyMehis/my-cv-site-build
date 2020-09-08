@@ -56,8 +56,8 @@ footer {
 	font-size: 8pt;
 }
 
-/* Hide print-only elements. */
-.print {
+/* Hide pdf/print-only elements. */
+.in-print {
     display: none !important;
 }
 
