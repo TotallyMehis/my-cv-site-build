@@ -16,6 +16,12 @@ p {
     margin-bottom: 0.8rem;
 }
 
+/* The default A4 margins are 1 inch. */
+.container {
+    padding-left: 1in;
+    padding-right: 1in;
+}
+
 .container > p {
     margin-left: 1rem;
     margin-right: 1rem;
