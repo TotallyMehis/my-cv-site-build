@@ -29,7 +29,7 @@ body {
 	background-repeat: repeat;
 	/*background-size: cover;*/
 	background-position: top center;
-	background-image: url('../img/bg001.png');
+	background-image: url('../img/bg001.jpg');
 
 	overflow-x: hidden;
 }
@@ -182,7 +182,7 @@ footer {
 	background-repeat: repeat;
 	background-size: cover;
 	background-position: top center;
-	background-image: url('../img/bg002.png');
+	background-image: url('../img/bg002.jpg');
 	
 	overflow: hidden;
 
