@@ -18,7 +18,7 @@ aboutMe:
         Ylioppilas tutkinto
 
 skillLists:
-  name: "Taidot (muotisanat)"
+  name: "Taidot"
   desc: Määrä kertoo **kuinka tuttu aihe on**.
 
 projects:
