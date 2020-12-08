@@ -16,9 +16,9 @@
   "devDependencies": {},
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "cpy-cli": "^3.0.0",
+    "cpy-cli": "^3.1.1",
     "deepmerge": "^4.2.2",
-    "js-yaml": "^3.13.1",
+    "js-yaml": "^3.14.1",
     "node-minify": "^3.6.0"
   }
 }
