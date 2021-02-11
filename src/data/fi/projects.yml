@@ -28,7 +28,7 @@ interview:
 #
 influx:
   name: Influx Timer - Tilastojen hallinta-sovellus
-  desc: Modulaarinen peliserveri lisännäinen tilastojen seurantaan sivuston kautta.
+  desc: Modulaarinen peliserveri liitännäinen tilastojen seurantaan sivuston kautta.
   text: |
     MySQL ja SQLite tilastojen tallennukseen, PHP & Ajax tilastojen katsomiseen sivulta.
     Uusimmat versiot tulevat automaattisesti kotisivuille.
