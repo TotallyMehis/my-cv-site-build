@@ -13,6 +13,9 @@ html
     meta(name='thumbnail' content='https://mehis.xyz/img/myface2.jpg')
     script(type='application/ld+json').
       {"@context":"http://schema.org","@type":"Person","name":"Miikka Ylätalo","image":"img/myface2.jpg","logo":"img/myface2.jpg","url":"https://mehis.xyz"}
+    //- Disable indexing for translations.
+    if translations.currentId != ''
+      meta(name='robots' content='noindex, follow')
     // Open Graph
     meta(property='og:image' content='https://mehis.xyz/img/myface2.jpg')
     // Bootstrap
