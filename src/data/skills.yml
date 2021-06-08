@@ -32,7 +32,7 @@ languages:
         - this-site
     #
     - name: Java
-      rating: 1
+      rating: 2
       markSystems: true
     #
     - name: JavaScript
@@ -85,7 +85,7 @@ tools:
       rating: 4
     #
     - name: Make
-      rating: 1
+      rating: 2
       markSystems: true
     #
     - name: Unity

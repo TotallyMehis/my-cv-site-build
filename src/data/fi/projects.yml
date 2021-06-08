@@ -21,7 +21,7 @@ interview:
   name: Videohaastattelu Sovellus
   desc: Sovellus HAMKin ulkomaalaisopiskelijoiden valintaprosessiin.
   text: |
-    Video striimataan WebSocketin kautta. ExpressJS sivuston tarjontaan.
+    ExpressJS sivuston tarjontaan. Video striimataan WebSocketin kautta.
     Kirjoitettu TypeScriptillä. Rakennetaan gulpJS:llä.
 #
 #

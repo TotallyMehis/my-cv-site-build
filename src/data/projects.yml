@@ -30,7 +30,7 @@ interview:
   desc: Real-time video interviewing site made for HAMK to be used in foreign student selection process.
   tech: NodeJS, ExpressJS, TypeScript, MySQL
   text: |
-    Streaming video through WebSocket with ExpressJS for the web server.
+    Streaming video through WebSocket with ExpressJS for the back-end.
     Fully written in TypeScript. Building is done with gulpJS.
   markWeb: true
 #
@@ -77,7 +77,7 @@ this-site:
   markWeb: true
   links:
     - name: Github
-      url: https://github.com/TotallyMehis/my-cv-site-build
+      url: https://github.com/TotallyMehis/my-cv
 #
 #
 #
